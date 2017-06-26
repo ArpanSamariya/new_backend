@@ -5,7 +5,7 @@ var URL="mongodb://arpan:arpansam@ds133162.mlab.com:33162/bus";
 
 const db=require('monk')(URL);
 
-const docs=db.get('pro');
+const docs=db.get('u');
 /* GET home page. */
 router.get('/find', function(req, res, next) {
   //res.render('index', { title: 'Express' });
