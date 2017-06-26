@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var URL="mongodb://nodemon:123456@ds131782.mlab.com:31782/vaioti";
+//var URL="mongodb://nodemon:123456@ds131782.mlab.com:31782/vaioti";//
+var URL="mongodb://arpan:arpansam@ds133162.mlab.com:33162/bus";
 
 const db=require('monk')(URL);
 
