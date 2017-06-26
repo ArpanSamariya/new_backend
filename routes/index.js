@@ -14,10 +14,11 @@ router.get('/find', function(req, res, next) {
         else res.json(docs[0]);
     })
 });
-router.get('/insert', function(req, res, next) {
-    //res.render('index', { title: 'Express' });
+router.post('/insert', function(req, res, next) {
+    var username_back=req.body.name; //name is key of json//
+    var password_back=req.body.password;
 
-    docs.insert({first_name:"Hardik"},function (err,docs){
+    docs.insert({"name":username_back,"password":password_back},function (err,docs){
         if(err) console.log(err);
         else res.json(docs);
     })
